@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  color: #28352f;
+}
+
+nav {
+  height: 48px;
+  align-items: center;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-welcome {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.btn-nav {
+  background: none;
+  border: none;
+}
