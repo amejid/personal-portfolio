@@ -64,3 +64,21 @@ nav {
   line-height: 28px;
   margin-bottom: 58px;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 58px;
+}
+
+.btn-next {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid #dfe1e6;
+  margin: 0 auto;
+}
