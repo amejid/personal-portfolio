@@ -101,3 +101,15 @@ nav {
   justify-content: center;
   margin-bottom: 62px;
 }
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+}
+
+.project-card {
+  height: 494px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
