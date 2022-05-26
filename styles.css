@@ -200,3 +200,18 @@ nav {
   display: block;
   margin: 0 auto;
 }
+
+.about-tools {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+  padding: 24px;
+  color: #344563;
+}
+
+.about-card {
+  height: 350px;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
