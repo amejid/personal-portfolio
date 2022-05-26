@@ -122,7 +122,7 @@ nav {
 }
 
 .project-card--content {
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -143,6 +143,8 @@ nav {
 
 .project-tools li {
   padding: 8px 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   font-size: 12px;
   line-height: 16px;
   background-color: #ebf0ee;
