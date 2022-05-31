@@ -279,4 +279,11 @@ nav {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
+  margin-bottom: 58px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
