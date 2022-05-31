@@ -286,7 +286,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 
 .form-control {
@@ -295,11 +295,12 @@ nav {
   padding: 15px 16px;
   font-weight: 400;
   font-size: 15px;
-  line-height: 24px;  
+  line-height: 24px;
 }
 
 .message {
   height: 114px;
+  border: 1px solid #36b37f;
 }
 
 .btn-submit {
@@ -310,5 +311,19 @@ nav {
   align-self: center;
   font-weight: 500;
   font-size: 17px;
-  letter-spacing: 0.03em;  
+  letter-spacing: 0.03em;
+}
+
+.contact-me .social-icons {
+  margin-bottom: 18px;
+}
+
+.contact-mail:link,
+.contact-mail:visited {
+  align-self: center;
+  text-decoration: none;
+  color: #42526e;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
 }
