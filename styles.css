@@ -270,3 +270,11 @@ nav {
 .contact-me {
   padding: 0 24px;
 }
+
+.contact-title {
+  color: #172b4d; 
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;    
+}
