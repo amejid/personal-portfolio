@@ -287,3 +287,27 @@ nav {
   flex-direction: column;
   gap: 24px;
 }
+
+.form-control {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.message {
+  height: 114px;
+}
+
+.btn-submit {
+  background: none;
+  background-color: #36b37f;
+  color: #fff;
+  padding: 12px;
+  align-self: center;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+}
