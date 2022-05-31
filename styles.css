@@ -178,6 +178,10 @@ nav {
   row-gap: 38px;
 }
 
+.about-me {
+  margin-bottom: 60px;
+}
+
 .about-me--title {
   font-size: 40px;
   line-height: 52px;
@@ -261,4 +265,8 @@ nav {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
+}
+
+.contact-me {
+  padding: 0 24px;
 }
