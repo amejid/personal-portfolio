@@ -178,6 +178,10 @@ nav {
   row-gap: 38px;
 }
 
+.about-me {
+  margin-bottom: 60px;
+}
+
 .about-me--title {
   font-size: 40px;
   line-height: 52px;
@@ -261,4 +265,70 @@ nav {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
+}
+
+.contact-me {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.form-control {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.message {
+  height: 114px;
+  border: 1px solid #36b37f;
+}
+
+.btn-submit {
+  background: none;
+  background-color: #36b37f;
+  color: #fff;
+  padding: 12px;
+  align-self: center;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+}
+
+.contact-me .social-icons {
+  margin-bottom: 18px;
+}
+
+.mail-wrapper {
+  height: 190px;
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.contact-mail:link,
+.contact-mail:visited {
+  text-decoration: none;
+  color: #42526e;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
 }

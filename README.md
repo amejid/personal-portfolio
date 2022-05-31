@@ -30,11 +30,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Abdelmejid Oumer Ali**
 
 - GitHub: [@amejid](https://github.com/amejid)
 - Twitter: [@amejidoumer](https://twitter.com/amejidoumer)
 - LinkedIn: [amejid](https://linkedin.com/in/amejid)
+
+👤 **Oyebade Prisicilla**
+
+- GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
+- Twitter: [@Prisicilla](https://twitter.com/Prisicilla)
+- LinkedIn: [Priscilla](https://linkedin.com/in/Priscilla)
 
 ## 🤝 Contributing
 
