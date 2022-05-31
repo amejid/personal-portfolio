@@ -446,8 +446,9 @@
         touch.
       </h2>
       <form class="contact-form" action="https://formspree.io/f/mbjwwqga" method="post">
-        <input class="form-control" type="text" name="name" />
-        <input class="form-control" type="email" name="email" />
+        <input class="form-control" type="text" name="name" maxlength="30" placeholder="Full name" required />
+        <input class="form-control" type="email" name="email" placeholder="email@email.com" required/>
+        <textarea class="form-control message" name="message" maxlength="500" placeholder="Enter text here" required ></textarea>        
       </form>
     </footer>
   </body>
