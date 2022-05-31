@@ -318,9 +318,14 @@ nav {
   margin-bottom: 18px;
 }
 
+.mail-wrapper {
+  height: 190px;
+  text-align: center;
+  margin-bottom: 140px;
+}
+
 .contact-mail:link,
 .contact-mail:visited {
-  align-self: center;
   text-decoration: none;
   color: #42526e;
   font-weight: 400;
