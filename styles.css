@@ -23,6 +23,10 @@ nav {
   line-height: 28px;
 }
 
+.nav-links {
+  display: none;
+}
+
 .btn-nav {
   background: none;
   border: none;
@@ -171,6 +175,11 @@ nav {
   margin-bottom: 58px;
 }
 
+.about-img-1,
+.about-img-2 {
+  display: none;
+}
+
 .about-intro--content {
   padding: 12px;
   display: flex;
@@ -267,10 +276,22 @@ nav {
   letter-spacing: 0.03em;
 }
 
-.contact-me {
+.contact-content {
   padding: 0 24px;
   display: flex;
   flex-direction: column;
+}
+
+.contact-img-1 {
+  display: none;
+}
+
+.contact-img-2 {
+  display: none;
+}
+
+.contact-img-3 {
+  display: none;
 }
 
 .contact-title {
@@ -287,6 +308,10 @@ nav {
   flex-direction: column;
   gap: 24px;
   margin-bottom: 44px;
+}
+
+.contact-form-big {
+  display: none;
 }
 
 .form-control {
@@ -331,4 +356,251 @@ nav {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url(images/header-llustration-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    height: 145vh;
+  }
+
+  nav {
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 160px;
+  }
+
+  .nav-welcome {
+    display: none;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28352f;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  .headline {
+    background: none;
+    margin: 0 260px;
+    padding: 0 48px;
+  }
+
+  .headline-intro,
+  .headline-job {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .headline-job {
+    margin-bottom: 24px;
+  }
+
+  .headline-details {
+    padding: 0 36px;
+    margin-bottom: 32px;
+  }
+
+  .social-icons {
+    margin-bottom: 84px;
+  }
+
+  .linkedin-icon {
+    order: 1;
+  }
+
+  .angelist-icon {
+    order: 2;
+  }
+
+  .twitter-icon {
+    order: 3;
+  }
+
+  .medium-icon {
+    order: 4;
+  }
+
+  .btn-next {
+    cursor: pointer;
+  }
+
+  .projects {
+    margin-bottom: 152px;
+  }
+
+  .work-sec-title {
+    padding-bottom: 0;
+    margin-bottom: 52px;
+  }
+
+  .indicator {
+    display: none;
+  }
+
+  .projects-container {
+    margin: 0 142px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 24px;
+  }
+
+  .project-card--content {
+    padding: 0;
+  }
+
+  .project-title {
+    padding: 16px;
+  }
+
+  .project-tools {
+    margin: 0 32px;
+    gap: 8px;
+  }
+
+  .about-me {
+    margin-bottom: 164px;
+  }
+
+  .about-intro-container {
+    position: relative;
+  }
+
+  .about-img-2 {
+    display: block;
+    position: absolute;
+    left: -215px;
+    bottom: -80px;
+    transform: scale(0.4, 0.4);
+  }
+
+  .about-img-1 {
+    display: block;
+    position: absolute;
+    right: -200px;
+    top: -360px;
+    transform: scale(0.4, 0.4);
+  }
+
+  .about-intro {
+    background: none;
+    height: inherit;
+    margin: 0 260px;
+  }
+
+  .about-intro--content {
+    gap: 24px;
+  }
+
+  .about-me--details {
+    padding: 0 60px;
+  }
+
+  .about-tools {
+    margin: 0 142px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .contact-me {
+    padding: 0;
+    position: relative;
+  }
+
+  .contact-img-1 {
+    display: block;
+    transform: scale(0.3, 0.3);
+    position: absolute;
+    left: -220px;
+    bottom: -300px;
+  }
+
+  .contact-img-2 {
+    display: block;
+    transform: scale(0.25, 0.25);
+    position: absolute;
+    left: 200px;
+    bottom: 32px;
+  }
+
+  .contact-img-3 {
+    display: block;
+    transform: scale(0.3, 0.3);
+    position: absolute;
+    right: -233px;
+    bottom: -450px;
+  }
+
+  .contact-content {
+    margin: 0 135px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 24px;
+    margin-bottom: 225px;
+    padding: 0 24px;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    display: none;
+  }
+
+  .contact-form-big {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .full-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .btn-submit {
+    align-self: flex-start;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .btn:active {
+    background-color: #008552;
+  }
+
+  .contact-me .social-icons {
+    height: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .mail-wrapper {
+    display: none;
+  }
 }

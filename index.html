@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -18,6 +18,11 @@
     <header>
       <nav>
         <p class="nav-welcome">Welcome</p>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="">Portfolio</a></li>
+          <li><a class="nav-link" href="">About</a></li>
+          <li><a class="nav-link" href="">Contact</a></li>
+        </ul>
         <button class="btn-nav" type="button">
           <svg
             width="24"
@@ -48,7 +53,7 @@
           </p>
 
           <div class="social-icons">
-            <a href="https://twitter.com/amejidoumer">
+            <a class="twitter-icon" href="https://twitter.com/amejidoumer">
               <svg
                 width="21"
                 height="20"
@@ -63,7 +68,7 @@
               </svg>
             </a>
 
-            <a href="https://linkedin.com/in/amejid">
+            <a class="linkedin-icon" href="https://linkedin.com/in/amejid">
               <svg
                 width="21"
                 height="20"
@@ -86,7 +91,7 @@
               </svg>
             </a>
 
-            <a href="">
+            <a class="medium-icon" href="">
               <svg
                 width="21"
                 height="16"
@@ -101,7 +106,7 @@
               </svg>
             </a>
 
-            <a href="https://github.com/amejid">
+            <a class="github-icon" href="https://github.com/amejid">
               <svg
                 width="19"
                 height="20"
@@ -116,7 +121,7 @@
               </svg>
             </a>
 
-            <a href="">
+            <a class="angelist-icon" href="">
               <svg
                 width="15"
                 height="20"
@@ -176,7 +181,7 @@
               <li>Javascript</li>
               <li>html</li>
             </ul>
-            <button type="button" class="view-project">See Project</button>
+            <button type="button" class="btn view-project">See Project</button>
           </div>
         </div>
 
@@ -190,7 +195,7 @@
               <li>Javascript</li>
               <li>html</li>
             </ul>
-            <button type="button" class="view-project">See Project</button>
+            <button type="button" class="btn view-project">See Project</button>
           </div>
         </div>
 
@@ -204,7 +209,7 @@
               <li>Javascript</li>
               <li>html</li>
             </ul>
-            <button type="button" class="view-project">See Project</button>
+            <button type="button" class="btn view-project">See Project</button>
           </div>
         </div>
 
@@ -218,7 +223,7 @@
               <li>Javascript</li>
               <li>html</li>
             </ul>
-            <button type="button" class="view-project">See Project</button>
+            <button type="button" class="btn view-project">See Project</button>
           </div>
         </div>
 
@@ -232,7 +237,7 @@
               <li>Javascript</li>
               <li>html</li>
             </ul>
-            <button type="button" class="view-project">See Project</button>
+            <button type="button" class="btn view-project">See Project</button>
           </div>
         </div>
 
@@ -246,22 +251,34 @@
               <li>Javascript</li>
               <li>html</li>
             </ul>
-            <button type="button" class="view-project">See Project</button>
+            <button type="button" class="btn view-project">See Project</button>
           </div>
         </div>
       </div>
     </section>
 
     <section class="about-me">
-      <div class="about-intro">
-        <div class="about-intro--content">
-          <h2 class="about-me--title">About me</h2>
-          <p class="about-me--details">
-            I can help you build a product , feature or website Look through some of my work and
-            experience! If you like what you see and have a project you need coded, don’t hestiate
-            to contact me.
-          </p>
-          <button type="button" class="btn-resume">Get My Resume</button>
+      <div class="about-intro-container">
+        <img
+          class="about-img-2"
+          src="images/illustration-about-me-2-desktop.png"
+          alt="About section illustration 2"
+        />
+        <img
+          class="about-img-1"
+          src="images/illustration-about-me-1-desktop.png"
+          alt="About section illustration 1"
+        />
+        <div class="about-intro">
+          <div class="about-intro--content">
+            <h2 class="about-me--title">About me</h2>
+            <p class="about-me--details">
+              I can help you build a product , feature or website Look through some of my work and
+              experience! If you like what you see and have a project you need coded, don’t hestiate
+              to contact me.
+            </p>
+            <button type="button" class="btn btn-resume">Get My Resume</button>
+          </div>
         </div>
       </div>
 
@@ -441,37 +458,90 @@
     </section>
 
     <footer class="contact-me">
-      <h2 class="contact-title">
-        I'm always interested in hearing about new projects, so if you'd like to chat please get in
-        touch.
-      </h2>
-      <form class="contact-form" action="https://formspree.io/f/mbjwwqga" method="post">
-        <input
-          class="form-control"
-          type="text"
-          name="name"
-          maxlength="30"
-          placeholder="Full name"
-          required
-        />
-        <input
-          class="form-control"
-          type="email"
-          name="email"
-          placeholder="email@email.com"
-          required
-        />
-        <textarea
-          class="form-control message"
-          name="message"
-          maxlength="500"
-          placeholder="Enter text here"
-          required
-        ></textarea>
-        <button class="form-control btn-submit" type="submit">Get in touch</button>
-      </form>
+      <img
+        class="contact-img-1"
+        src="images/illustration-1-contact-form-desktop.png"
+        alt="Contact form illustration 1"
+      />
+      <img
+        class="contact-img-2"
+        src="images/illustration-2-contact-form-desktop.png"
+        alt="Contact form illustration 1"
+      />
+      <img
+        class="contact-img-3"
+        src="images/illustration-3-contact-form-desktop.png"
+        alt="Contact form illustration 1"
+      />
+      <div class="contact-content">
+        <h2 class="contact-title">
+          I'm always interested in hearing about new projects, so if you'd like to chat please get
+          in touch.
+        </h2>
+        <form class="contact-form" action="https://formspree.io/f/mbjwwqga" method="post">
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            maxlength="30"
+            placeholder="Full name"
+            required
+          />
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="email@email.com"
+            required
+          />
+          <textarea
+            class="form-control message"
+            name="message"
+            maxlength="500"
+            placeholder="Enter text here"
+            required
+          ></textarea>
+          <button class="btn form-control btn-submit" type="submit">Get in touch</button>
+        </form>
+        <form class="contact-form-big" action="https://formspree.io/f/mbjwwqga" method="post">
+          <div class="full-name">
+            <input
+              class="form-control"
+              type="text"
+              name="first-name"
+              maxlength="30"
+              placeholder="First Name"
+              required
+            />
+            <input
+              class="form-control"
+              type="text"
+              name="last-name"
+              maxlength="30"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
+          <textarea
+            class="form-control message"
+            name="message"
+            maxlength="500"
+            placeholder="Typing something"
+            required
+          ></textarea>
+          <button class="btn form-control btn-submit" type="submit">Get in touch</button>
+        </form>
+      </div>
       <div class="social-icons">
-        <a href="https://twitter.com/amejidoumer">
+        <a class="twitter-icon" href="https://twitter.com/amejidoumer">
           <svg
             width="21"
             height="20"
@@ -486,7 +556,7 @@
           </svg>
         </a>
 
-        <a href="https://linkedin.com/in/amejid">
+        <a class="linkedin-icon" href="https://linkedin.com/in/amejid">
           <svg
             width="21"
             height="20"
@@ -509,7 +579,7 @@
           </svg>
         </a>
 
-        <a href="">
+        <a class="medium-icon" href="">
           <svg
             width="21"
             height="16"
@@ -524,7 +594,7 @@
           </svg>
         </a>
 
-        <a href="https://github.com/amejid">
+        <a class="github-icon" href="https://github.com/amejid">
           <svg
             width="19"
             height="20"
@@ -539,7 +609,7 @@
           </svg>
         </a>
 
-        <a href="">
+        <a class="angelist-icon" href="">
           <svg
             width="15"
             height="20"
