@@ -276,10 +276,22 @@ nav {
   letter-spacing: 0.03em;
 }
 
-.contact-me {
+.contact-content {
   padding: 0 24px;
   display: flex;
   flex-direction: column;
+}
+
+.contact-img-1 {
+  display: none;
+}
+
+.contact-img-2 {
+  display: none;
+}
+
+.contact-img-3 {
+  display: none;
 }
 
 .contact-title {
