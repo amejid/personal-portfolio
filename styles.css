@@ -418,4 +418,28 @@ nav {
     padding: 0 36px;
     margin-bottom: 32px;
   }
+
+  .social-icons {
+    margin-bottom: 84px;
+  }
+
+  .linkedin-icon {
+    order: 1;
+  }
+
+  .angelist-icon {
+    order: 2;
+  }
+
+  .twitter-icon {
+    order: 3;
+  }
+
+  .medium-icon {
+    order: 4;
+  }
+
+  .btn-next {
+    cursor: pointer;
+  }
 }
