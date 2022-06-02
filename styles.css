@@ -519,4 +519,33 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 24px;
   }
+
+  .contact-me {
+    padding: 0;
+    position: relative;
+  }
+
+  .contact-img-1 {
+    display: block;
+    transform: scale(0.3, 0.3);
+    position: absolute;
+    left: -220px;
+    bottom: -300px;
+  }
+
+  .contact-img-2 {
+    display: block;
+    transform: scale(0.25, 0.25);
+    position: absolute;
+    left: 200px;
+    bottom: 32px;
+  }
+
+  .contact-img-3 {
+    display: block;
+    transform: scale(0.3, 0.3);
+    position: absolute;
+    right: -233px;
+    bottom: -450px;
+  }
 }
