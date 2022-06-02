@@ -310,6 +310,10 @@ nav {
   margin-bottom: 44px;
 }
 
+.contact-form-big {
+  display: none;
+}
+
 .form-control {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
