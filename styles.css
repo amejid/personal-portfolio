@@ -23,6 +23,10 @@ nav {
   line-height: 28px;
 }
 
+.nav-links {
+  display: none;
+}
+
 .btn-nav {
   background: none;
   border: none;
