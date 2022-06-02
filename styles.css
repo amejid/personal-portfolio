@@ -513,4 +513,10 @@ nav {
   .about-me--details {
     padding: 0 60px;
   }
+
+  .about-tools {
+    margin: 0 142px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
 }
