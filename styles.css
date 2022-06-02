@@ -442,4 +442,37 @@ nav {
   .btn-next {
     cursor: pointer;
   }
+
+  .projects {
+    margin-bottom: 152px;
+  }
+
+  .work-sec-title {
+    padding-bottom: 0;
+    margin-bottom: 52px;
+  }
+
+  .indicator {
+    display: none;
+  }
+
+  .projects-container {
+    margin: 0 142px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 24px;
+  }
+
+  .project-card--content {
+    padding: 0;
+  }
+
+  .project-title {
+    padding: 16px;
+  }
+
+  .project-tools {
+    margin: 0 32px;
+    gap: 8px;
+  }
 }
