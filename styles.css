@@ -395,4 +395,27 @@ nav {
   .btn-nav {
     display: none;
   }
+
+  .headline {
+    background: none;
+    margin: 0 260px;
+    padding: 0 48px;
+  }
+
+  .headline-intro,
+  .headline-job {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .headline-job {
+    margin-bottom: 24px;
+  }
+
+  .headline-details {
+    padding: 0 36px;
+    margin-bottom: 32px;
+  }
 }
