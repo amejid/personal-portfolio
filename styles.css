@@ -593,4 +593,14 @@ nav {
   .btn:active {
     background-color: #008552;
   }
+
+  .contact-me .social-icons {
+    height: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .mail-wrapper {
+    display: none;
+  }
 }
