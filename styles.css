@@ -357,3 +357,23 @@ nav {
   font-size: 20px;
   line-height: 32px;
 }
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url(images/header-llustration-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    height: 145vh;
+  }
+
+  nav {
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 160px;
+  }
+
+  .nav-welcome {
+    display: none;
+  }
+}
