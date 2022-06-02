@@ -376,4 +376,23 @@ nav {
   .nav-welcome {
     display: none;
   }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28352f;
+  }
+
+  .btn-nav {
+    display: none;
+  }
 }
