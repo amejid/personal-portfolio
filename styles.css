@@ -561,4 +561,24 @@ nav {
   .contact-title {
     font-size: 30px;
   }
+
+  .contact-form {
+    display: none;
+  }
+
+  .contact-form-big {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .full-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .btn-submit {
+    align-self: flex-start;
+  }
 }
