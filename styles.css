@@ -175,6 +175,11 @@ nav {
   margin-bottom: 58px;
 }
 
+.about-img-1,
+.about-img-2 {
+  display: none;
+}
+
 .about-intro--content {
   padding: 12px;
   display: flex;
