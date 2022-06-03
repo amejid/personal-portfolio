@@ -412,6 +412,20 @@ nav {
 
   .headline-job {
     margin-bottom: 24px;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .headline-details {
@@ -441,6 +455,11 @@ nav {
 
   .btn-next {
     cursor: pointer;
+    transition: width 2s;
+  }
+
+  .btn-next:hover {
+    width: 20px;
   }
 
   .projects {
