@@ -482,11 +482,6 @@ nav {
     column-gap: 24px;
   }
 
-  .project-card:hover,
-  .btn:hover {
-    transform: scale(1.05);
-  }
-
   .project-card--content {
     padding: 0;
   }
@@ -612,6 +607,11 @@ nav {
 
   .btn:hover {
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .project-card:hover,
+  .btn:hover {
+    transform: scale(1.05);
   }
 
   .btn:active {
