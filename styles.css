@@ -463,6 +463,11 @@ nav {
     column-gap: 24px;
   }
 
+  .project-card:hover,
+  .btn:hover {
+    transform: scale(1.05);
+  }
+
   .project-card--content {
     padding: 0;
   }
