@@ -6,9 +6,9 @@ A personal portfolio page that showcases my work
 
 - HTML, CSS
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://amejid.github.io/personal-portfolio/)
 
 ## Getting Started
 
