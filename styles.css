@@ -4,23 +4,43 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: Inter, sans-serif;
   color: #28352f;
 }
 
-nav {
-  height: 48px;
-  align-items: center;
-  padding: 0 24px;
+header,
+section,
+footer {
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 4.8rem;
   display: flex;
+  align-items: center;
+  padding: 0 2.4rem;
   justify-content: space-between;
+}
+
+.headline {
+  background-image: url(images/header-illsutration.png);
+  background-repeat: no-repeat;
+  background-size: calc(100%);
+  margin-top: 4.8rem;
+  margin-bottom: 2.2rem;
 }
 
 .nav-welcome {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 2rem;
+  line-height: 2.8rem;
 }
 
 .nav-links {
@@ -32,168 +52,161 @@ nav {
   border: none;
 }
 
-.headline {
-  background-image: url(images/header-illsutration.png);
-  background-size: cover;
-  height: 100vh;
-}
-
 .headline-content {
-  margin: 24px;
-  margin-top: 0;
+  margin: 0 2.4rem;
   color: #172b4d;
 }
 
 .headline-intro,
 .headline-job {
   text-align: center;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 5.2rem;
 }
 
 .headline-intro {
-  padding-top: 74px;
+  padding-top: 7.4rem;
 }
 
 .headline-job {
   color: #36b37f;
-  margin-bottom: 48px;
+  margin-bottom: 5.8rem;
 }
 
 .headline-details {
   text-align: center;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 58px;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin-bottom: 5.8rem;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 1.2rem;
   align-items: center;
-  margin-bottom: 58px;
+  margin-bottom: 6.2rem;
 }
 
 .btn-next {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   display: block;
   background: none;
   border-radius: 50%;
-  border: 1px solid #dfe1e6;
+  border: 0.1rem solid #dfe1e6;
   margin: 0 auto;
 }
 
 .projects {
-  padding: 24px;
+  padding: 0 2.4rem;
+  margin-bottom: 6.8rem;
 }
 
 .work-sec-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 4rem;
   color: #172b4d;
-  line-height: 52px;
-  padding-bottom: 24px;
+  line-height: 5.2rem;
+  margin-bottom: 2.4rem;
   text-align: center;
 }
 
 .indicator {
   display: flex;
   justify-content: center;
-  margin-bottom: 62px;
+  margin-bottom: 6.2rem;
 }
 
-.projects-container {
+.cards-container {
   display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 24px;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 2.4rem;
 }
 
 .project-card {
-  height: 494px;
-  border: 1px solid #d0d9d4;
+  border: 0.1rem solid #d0d9d4;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
 }
 
 .project-card--thumb {
-  height: 260px;
+  height: 25.2rem;
   background-color: #ebf0ee;
+  margin-bottom: 1.6rem;
 }
 
 .project-card--content {
-  padding: 12px;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: 1.6rem;
 }
 
 .project-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   text-align: center;
 }
 
 .project-tools {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
 .project-tools li {
-  padding: 8px 12px;
+  padding: 0.8rem 1.2rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   background-color: #ebf0ee;
   border-radius: 4px;
 }
 
 .view-project {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
-  padding: 12px;
+  padding: 1.2rem;
+  margin-bottom: 2.4rem;
   background-color: #36b37f;
   color: #fff;
   border: none;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
   font-weight: 500;
   border-radius: 4px;
 }
 
-.about-intro {
-  height: 380px;
-  background-image: url(images/about-cover.png);
-  background-size: cover;
-  margin-bottom: 58px;
+.about-me {
+  margin-bottom: 6rem;
 }
 
-.about-img-1,
-.about-img-2 {
-  display: none;
+.about-intro {
+  background-image:
+    url(images/bg/illustration-1-about-me-mobile.png),
+    url(images/bg/illustration-2-about-me-mobile.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+  margin-bottom: 5.8rem;
 }
 
 .about-intro--content {
-  padding: 12px;
+  padding: 0 1.2rem;
   display: flex;
   flex-direction: column;
-  row-gap: 38px;
-}
-
-.about-me {
-  margin-bottom: 60px;
+  row-gap: 2.4rem;
 }
 
 .about-me--title {
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 4rem;
+  line-height: 5.2rem;
   font-weight: 700;
   text-align: center;
   color: #172b4d;
@@ -202,59 +215,58 @@ nav {
 .about-me--details {
   color: #172b4d;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 3.2rem;
   text-align: center;
 }
 
 .btn-resume {
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
   color: #fff;
   background-color: #36b37f;
-  padding: 12px;
+  padding: 1.2rem;
   border: none;
   border-radius: 4px;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 
 .about-tools {
   display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 24px;
-  padding: 24px;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 2.4rem;
+  padding: 0 2.4rem;
   color: #344563;
 }
 
 .about-card {
-  height: 350px;
   background-color: #ebf0ee;
-  border: 1px solid #c1c7d0;
+  border: 0.1rem solid #c1c7d0;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
 }
 
 .elipse {
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background-color: #fff;
-  margin: 40px auto 64px auto;
-  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  margin: 4rem auto 6.4rem auto;
+  box-shadow: 0 1.6rem 2.4rem rgba(37, 47, 137, 0.08);
 }
 
 .about-card--title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .about-card--details {
@@ -262,52 +274,41 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 0.8rem;
+  margin-bottom: 7.2rem;
 }
 
 .about-card--details li {
-  padding: 12px;
+  padding: 1.2rem;
   border-radius: 8px;
   background-color: #fff;
   color: #36b37f;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   letter-spacing: 0.03em;
 }
 
 .contact-content {
-  padding: 0 24px;
+  padding: 0 2.4rem;
   display: flex;
   flex-direction: column;
-}
-
-.contact-img-1 {
-  display: none;
-}
-
-.contact-img-2 {
-  display: none;
-}
-
-.contact-img-3 {
-  display: none;
 }
 
 .contact-title {
   color: #172b4d;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 4rem;
+  line-height: 5.2rem;
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 5.8rem;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-bottom: 44px;
+  gap: 2.4rem;
+  margin-bottom: 4.4rem;
 }
 
 .contact-form-big {
@@ -315,38 +316,37 @@ nav {
 }
 
 .form-control {
-  border: 1px solid #d0d9d4;
+  border: 0.1rem solid #d0d9d4;
   border-radius: 4px;
-  padding: 15px 16px;
+  padding: 1.5rem 1.6rem;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
 }
 
 .message {
-  height: 114px;
-  border: 1px solid #36b37f;
+  height: 11.4rem;
+  border: 0.1rem solid #36b37f;
 }
 
 .btn-submit {
   background: none;
   background-color: #36b37f;
   color: #fff;
-  padding: 12px;
+  padding: 1.2rem;
   align-self: center;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.7rem;
   letter-spacing: 0.03em;
 }
 
 .contact-me .social-icons {
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 
 .mail-wrapper {
-  height: 190px;
   text-align: center;
-  margin-bottom: 140px;
+  margin-bottom: 28rem;
 }
 
 .contact-mail:link,
@@ -354,23 +354,22 @@ nav {
   text-decoration: none;
   color: #42526e;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 3.2rem;
 }
 
-@media only screen and (min-width: 768px) {
-  header {
+@media (min-width: 768px) {
+  .headline {
     background-image: url(images/header-llustration-desktop.png);
-    background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
-    height: 145vh;
+    background-size: calc(100%);
+    height: 150vh;
+    margin-top: 0;
   }
 
-  nav {
+  .header {
     justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 160px;
+    padding: 0;
   }
 
   .nav-welcome {
@@ -380,15 +379,15 @@ nav {
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 2.4rem;
   }
 
   .nav-link:link,
   .nav-link:visited {
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 2rem;
+    line-height: 2.8rem;
     color: #28352f;
   }
 
@@ -396,22 +395,22 @@ nav {
     display: none;
   }
 
-  .headline {
-    background: none;
-    margin: 0 260px;
-    padding: 0 48px;
+  .headline-content {
+    max-width: 92rem;
+    margin: 0 auto;
+    padding-top: 16rem;
   }
 
   .headline-intro,
   .headline-job {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 800;
-    line-height: 60px;
+    line-height: 6rem;
     letter-spacing: 0.37px;
   }
 
   .headline-job {
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
     animation-duration: 2s;
     animation-name: slidein;
   }
@@ -429,12 +428,12 @@ nav {
   }
 
   .headline-details {
-    padding: 0 36px;
-    margin-bottom: 32px;
+    padding: 0 2.4rem;
+    margin-bottom: 3.2rem;
   }
 
   .social-icons {
-    margin-bottom: 84px;
+    margin-bottom: 8.4rem;
   }
 
   .linkedin-icon {
@@ -459,27 +458,30 @@ nav {
   }
 
   .btn-next:hover {
-    width: 20px;
+    width: 3.2rem;
   }
 
   .projects {
-    margin-bottom: 152px;
+    padding: 0;
+    margin-bottom: 15.2rem;
   }
 
   .work-sec-title {
     padding-bottom: 0;
-    margin-bottom: 52px;
+    margin-bottom: 5.2rem;
   }
 
   .indicator {
     display: none;
   }
 
-  .projects-container {
-    margin: 0 142px;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 32px;
-    column-gap: 24px;
+  .cards-container {
+    max-width: 116rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 3.2rem;
+    column-gap: 2.4rem;
   }
 
   .project-card--content {
@@ -487,98 +489,66 @@ nav {
   }
 
   .project-title {
-    padding: 16px;
-  }
-
-  .project-tools {
-    margin: 0 32px;
-    gap: 8px;
+    padding: 1.6rem;
   }
 
   .about-me {
-    margin-bottom: 164px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16.4rem;
   }
 
   .about-intro-container {
-    position: relative;
-  }
-
-  .about-img-2 {
-    display: block;
-    position: absolute;
-    left: -215px;
-    bottom: -80px;
-    transform: scale(0.4, 0.4);
-  }
-
-  .about-img-1 {
-    display: block;
-    position: absolute;
-    right: -200px;
-    top: -360px;
-    transform: scale(0.4, 0.4);
+    background-image:
+      url(images/bg/illustration-about-me-1-desktop.png),
+      url(images/bg/illustration-about-me-2-desktop.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom left;
   }
 
   .about-intro {
     background: none;
-    height: inherit;
-    margin: 0 260px;
+    max-width: 92rem;
+    margin: 0 auto;
+    margin-bottom: 5.2rem;
   }
 
   .about-intro--content {
-    gap: 24px;
+    gap: 2.4rem;
   }
 
   .about-me--details {
-    padding: 0 60px;
+    padding: 0 2.4rem;
   }
 
   .about-tools {
-    margin: 0 142px;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 24px;
+    max-width: 116rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 2.4rem;
   }
 
   .contact-me {
     padding: 0;
-    position: relative;
-  }
-
-  .contact-img-1 {
-    display: block;
-    transform: scale(0.3, 0.3);
-    position: absolute;
-    left: -220px;
-    bottom: -300px;
-  }
-
-  .contact-img-2 {
-    display: block;
-    transform: scale(0.25, 0.25);
-    position: absolute;
-    left: 200px;
-    bottom: 32px;
-  }
-
-  .contact-img-3 {
-    display: block;
-    transform: scale(0.3, 0.3);
-    position: absolute;
-    right: -233px;
-    bottom: -450px;
+    background-image:
+      url(images/bg/illustration-1-contact-form-desktop.png),
+      url(images/bg/illustration-2-contact-form-desktop.png),
+      url(images/bg/illustration-3-contact-form-desktop.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0% 80%, 20% 70%, 100% 55%;
   }
 
   .contact-content {
-    margin: 0 135px;
+    max-width: 116rem;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    column-gap: 24px;
-    margin-bottom: 225px;
-    padding: 0 24px;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    column-gap: 2.4rem;
+    margin-bottom: 22.5rem;
   }
 
   .contact-title {
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   .contact-form {
@@ -588,13 +558,13 @@ nav {
   .contact-form-big {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 2.4rem;
   }
 
   .full-name {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.4rem;
   }
 
   .btn-submit {
@@ -606,7 +576,7 @@ nav {
   }
 
   .btn:hover {
-    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    box-shadow: 0 0.8rem 1.6rem rgba(54, 179, 127, 0.24);
   }
 
   .project-card:hover,
@@ -619,9 +589,9 @@ nav {
   }
 
   .contact-me .social-icons {
-    height: 60px;
+    height: 6rem;
     margin-bottom: 0;
-    border-top: 1px solid #dfe1e6;
+    border-top: 0.1rem solid #dfe1e6;
   }
 
   .mail-wrapper {
