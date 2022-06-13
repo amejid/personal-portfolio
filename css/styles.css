@@ -422,6 +422,14 @@ footer {
     gap: 2.4rem;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+  
+  .close-menu {
+    display: none;
+  }
+
   .nav-link:link,
   .nav-link:visited {
     text-decoration: none;
