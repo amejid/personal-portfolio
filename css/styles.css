@@ -76,7 +76,6 @@ footer {
   color: #3a4a42;
 }
 
-
 .close-menu {
   align-self: flex-end;
   margin-left: 3.2rem;
@@ -425,7 +424,7 @@ footer {
   .mobile-menu {
     display: none;
   }
-  
+
   .close-menu {
     display: none;
   }
