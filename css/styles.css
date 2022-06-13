@@ -70,6 +70,13 @@ footer {
   line-height: 4.4rem;
 }
 
+.mobile-menu li a:link,
+.mobile-menu li a:visited {
+  text-decoration: none;
+  color: #3a4a42;
+}
+
+
 .close-menu {
   align-self: flex-end;
   margin-left: 3.2rem;
