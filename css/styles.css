@@ -70,6 +70,16 @@ footer {
   line-height: 4.4rem;
 }
 
+.close-menu {
+  align-self: flex-end;
+  margin-left: 3.2rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+}
+
 .btn-nav {
   background: none;
   border: none;
