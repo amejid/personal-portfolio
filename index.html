@@ -19,7 +19,11 @@
       <h3 class="nav-welcome">Welcome</h3>
       <nav>
         <ul class="nav-links">
-          <li class="close-menu"><button type="button" class="close-btn"><img src="images/icons/close-btn.svg" alt="Close menu"></button></li>
+          <li class="close-menu">
+            <button type="button" class="close-btn">
+              <img src="images/icons/close-btn.svg" alt="Close menu" />
+            </button>
+          </li>
           <li><a class="nav-link" href="#projects-section">Portfolio</a></li>
           <li><a class="nav-link" href="#about-section">About</a></li>
           <li><a class="nav-link" href="#contact-section">Contact</a></li>
@@ -71,89 +75,32 @@
       <div class="indicator">
         <img src="images/icons/indicator-bar.svg" alt="Indicator bar" />
       </div>
-      <div class="cards-container">
-        <div class="project-card">
-          <div class="project-card--thumb"></div>
-          <div class="project-card--content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="project-tools">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>Javascript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="btn view-project">See Project</button>
-          </div>
-        </div>
+      <div class="cards-container"></div>
 
-        <div class="project-card">
-          <div class="project-card--thumb"></div>
-          <div class="project-card--content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="project-tools">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>Javascript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="btn view-project">See Project</button>
+      <div class="modal-container">
+        <div class="modal">
+          <div class="modal-btn-container">
+            <button type="button" class="modal-close modal-close--desktop">
+              <img src="./images/icons/close-btn.svg" alt="Modal close button" />
+            </button>
           </div>
-        </div>
+          <div class="modal-img-container">
+            <button type="button" class="modal-close modal-close--mobile">
+              <img src="./images/icons/close-btn.svg" alt="Modal close button" />
+            </button>
+          </div>
 
-        <div class="project-card">
-          <div class="project-card--thumb"></div>
-          <div class="project-card--content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="project-tools">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>Javascript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="btn view-project">See Project</button>
+          <div class="modal-title-links"></div>
+          <div class="modal-links">
+            <a href="" class="btn btn-modal btn-live"
+              ><span>See live</span><img src="./images/icons/go-live-icon.svg" alt="Go live"
+            /></a>
+            <a href="" class="btn btn-modal btn-source"
+              ><span>See source</span><img src="./images/icons/github-white.svg" alt="See source"
+            /></a>
           </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card--thumb"></div>
-          <div class="project-card--content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="project-tools">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>Javascript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="btn view-project">See Project</button>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card--thumb"></div>
-          <div class="project-card--content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="project-tools">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>Javascript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="btn view-project">See Project</button>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card--thumb"></div>
-          <div class="project-card--content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="project-tools">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>Javascript</li>
-              <li>html</li>
-            </ul>
-            <button type="button" class="btn view-project">See Project</button>
-          </div>
+          <ul class="project-tools modal-tools"></ul>
+          <div class="modal-desc"></div>
         </div>
       </div>
     </section>
