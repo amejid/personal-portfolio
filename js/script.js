@@ -109,3 +109,54 @@ navLink.forEach((link) =>
   })
 );
 
+document.addEventListener('DOMContentLoaded', () => {
+  const projectDetails = document.querySelectorAll('.view-project');
+  const modalContainer = document.querySelector('.modal-container');
+  const modalImgContainer = document.querySelector('.modal-img-container');
+  const modalTitleLinks = document.querySelector('.modal-title-links');
+  const modalTools = document.querySelector('.modal-tools');
+  const modalDescription = document.querySelector('.modal-desc');
+  const closeModal = document.querySelectorAll('.modal-close');
+  const btnLive = document.querySelector('.btn-live');
+  const btnSource = document.querySelector('.btn-source');
+
+  const modalImgMobile = document.createElement('img');
+  const modalImgDesktop = document.createElement('img');
+  const modalTitle = document.createElement('h3');
+  for (let i = 0; i < projectDetails.length; i += 1) {
+    projectDetails[i].addEventListener('click', () => {
+      modalTools.innerHTML = '';
+      const [imgMobile, imgDesktop] = projectsData[i].imageUrl;
+      modalImgMobile.src = imgMobile;
+      modalImgMobile.classList.add('modal-img', 'modal-img--mobile');
+      modalImgDesktop.src = imgDesktop;
+      modalImgDesktop.classList.add('modal-img', 'modal-img--desktop');
+      modalTitle.textContent = projectsData[i].name;
+      modalTitle.classList.add('modal-title');
+
+      for (let k = 0; k < projectsData[i].technologies.length; k += 1) {
+        const modalTool = document.createElement('li');
+        modalTool.textContent = projectsData[i].technologies[k];
+        modalTools.appendChild(modalTool);
+      }
+
+      modalDescription.textContent = projectsData[i].description;
+      btnLive.href = projectsData[i].linkLive;
+      btnSource.href = projectsData[i].linkSource;
+
+      modalImgContainer.appendChild(modalImgDesktop);
+      modalImgContainer.appendChild(modalImgMobile);
+      modalTitleLinks.appendChild(modalTitle);
+
+      modalContainer.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+
+  closeModal.forEach((link) =>
+    link.addEventListener('click', () => {
+      modalContainer.classList.remove('open');
+      document.body.style.overflow = 'scroll';
+    })
+  );
+});
