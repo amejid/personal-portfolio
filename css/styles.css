@@ -273,6 +273,19 @@ footer {
   display: none;
 }
 
+.modal-img {
+  width: 100%;
+  grid-column: 1/-1;
+}
+
+.modal-img--desktop {
+  display: none;
+}
+
+.modal-img--mobile {
+  display: block;
+}
+
 .about-me {
   margin-bottom: 6rem;
 }
