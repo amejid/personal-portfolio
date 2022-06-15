@@ -311,6 +311,36 @@ footer {
   grid-column: 1/-1;
 }
 
+.btn-modal:link,
+.btn-modal:visited {
+  width: 100%;
+  padding: 1.4rem 1.2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #fff;
+  background-color: #36b37e;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 8px;
+}
+
+.modal .modal-tools {
+  justify-content: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.modal-desc {
+  color: #344563;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-bottom: 1.2rem;
+  grid-column: 1/-1;
+}
+
 .about-me {
   margin-bottom: 6rem;
 }
