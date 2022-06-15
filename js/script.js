@@ -5,10 +5,12 @@ const navLink = document.querySelectorAll('.nav-link');
 
 hamburger.addEventListener('click', () => {
   navMenu.classList.add('mobile-menu');
+  document.body.style.overflow = 'hidden';
 });
 
 closeBtn.addEventListener('click', () => {
   navMenu.classList.remove('mobile-menu');
+  document.body.style.overflow = 'scroll';
 });
 
 navLink.forEach((link) => link.addEventListener('click', () => {
