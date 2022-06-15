@@ -16,6 +16,7 @@ const validateForm = (form, emailInput, msgOutput) => {
     const emailText = emailInput.value;
     if (!isInLowerCase(emailText)) {
       msgOutput.textContent = 'Email should be in lowercase';
+      msgOutput.classList.add('error-msg');
     } else {
       form.submit();
     }

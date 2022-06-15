@@ -497,6 +497,12 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.error-msg {
+  font-size: 1.8rem;
+  color: #ff6163;
+  padding-top: 1.2rem;
+}
+
 .contact-me .social-icons {
   margin-bottom: 1.8rem;
 }
