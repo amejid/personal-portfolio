@@ -170,7 +170,12 @@
           I'm always interested in hearing about new projects, so if you'd like to chat please get
           in touch.
         </h2>
-        <form class="contact-form" action="https://formspree.io/f/mbjwwqga" method="post">
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formspree.io/f/mbjwwqga"
+          method="post"
+        >
           <input
             class="form-control"
             type="text"
@@ -193,9 +198,17 @@
             placeholder="Enter text here"
             required
           ></textarea>
-          <button class="btn form-control btn-submit" type="submit">Get in touch</button>
+          <div class="msg-container">
+            <button class="btn form-control btn-submit" type="submit">Get in touch</button>
+            <p class="val-result"></p>
+          </div>
         </form>
-        <form class="contact-form-big" action="https://formspree.io/f/mbjwwqga" method="post">
+        <form
+          id="contact-form-big"
+          class="contact-form-big"
+          action="https://formspree.io/f/mbjwwqga"
+          method="post"
+        >
           <div class="full-name">
             <input
               class="form-control"
@@ -229,7 +242,10 @@
             placeholder="Typing something"
             required
           ></textarea>
-          <button class="btn form-control btn-submit" type="submit">Get in touch</button>
+          <div class="msg-container">
+            <button class="btn form-control btn-submit" type="submit">Get in touch</button>
+            <p class="val-result-big"></p>
+          </div>
         </form>
       </div>
       <div class="social-icons">
@@ -259,5 +275,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/validator.js"></script>
   </body>
 </html>
