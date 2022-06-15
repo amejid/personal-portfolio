@@ -286,6 +286,31 @@ footer {
   display: block;
 }
 
+.modal-title-links {
+  grid-column: 1/-1;
+  margin-bottom: 1.2rem;
+}
+
+.modal-title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+}
+
+.modal-links {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+  order: 1;
+}
+
+.modal-tools {
+  grid-column: 1/-1;
+}
+
 .about-me {
   margin-bottom: 6rem;
 }
