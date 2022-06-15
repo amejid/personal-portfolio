@@ -103,11 +103,9 @@ closeBtn.addEventListener('click', () => {
   document.body.style.overflow = 'scroll';
 });
 
-navLink.forEach((link) =>
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('mobile-menu');
-  })
-);
+navLink.forEach((link) => link.addEventListener('click', () => {
+  navMenu.classList.remove('mobile-menu');
+}));
 
 document.addEventListener('DOMContentLoaded', () => {
   const projectDetails = document.querySelectorAll('.view-project');
@@ -153,10 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  closeModal.forEach((link) =>
-    link.addEventListener('click', () => {
-      modalContainer.classList.remove('open');
-      document.body.style.overflow = 'scroll';
-    })
-  );
+  closeModal.forEach((link) => link.addEventListener('click', () => {
+    modalContainer.classList.remove('open');
+    document.body.style.overflow = 'scroll';
+  }));
 });
