@@ -251,13 +251,34 @@ footer {
   grid-template-columns: 65fr 35fr;
 }
 
+.modal-img-container {
+  position: relative;
+  grid-column: 1/-1;
+  margin-bottom: 1.2rem;
+}
+
+.modal-close--mobile {
+  position: absolute;
+  display: inline-block;
+  background: none;
+  top: 0;
+  right: 0;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+}
+
+.modal-btn-container {
+  display: none;
+}
+
 .about-me {
   margin-bottom: 6rem;
 }
 
 .about-intro {
-  background-image:
-    url(../images/bg/illustration-1-about-me-mobile.png),
+  background-image: url(../images/bg/illustration-1-about-me-mobile.png),
     url(../images/bg/illustration-2-about-me-mobile.png);
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left;
@@ -574,8 +595,7 @@ footer {
   }
 
   .about-intro-container {
-    background-image:
-      url(../images/bg/illustration-about-me-1-desktop.png),
+    background-image: url(../images/bg/illustration-about-me-1-desktop.png),
       url(../images/bg/illustration-about-me-2-desktop.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom left;
@@ -605,8 +625,7 @@ footer {
 
   .contact-me {
     padding: 0;
-    background-image:
-      url(../images/bg/illustration-1-contact-form-desktop.png),
+    background-image: url(../images/bg/illustration-1-contact-form-desktop.png),
       url(../images/bg/illustration-2-contact-form-desktop.png),
       url(../images/bg/illustration-3-contact-form-desktop.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
