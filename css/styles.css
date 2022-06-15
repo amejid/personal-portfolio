@@ -656,6 +656,43 @@ footer {
     padding: 1.6rem;
   }
 
+  .btn-modal:link,
+.btn-modal:visited {
+  width: 100%;
+  padding: 1.4rem 1.2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #fff;
+  background-color: #36b37e;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 8px;
+}
+
+.modal .modal-tools {
+  justify-content: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.modal {
+    max-width: 92rem;
+    margin: 12rem auto;
+    padding: 2.4rem;
+    padding-bottom: 4.4rem;
+  }
+
+  .modal-close--desktop {
+    display: inline-block;
+    align-self: flex-end;
+    background: #ebecf0;
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ebecf0;
+  }
+
   .about-me {
     margin: 0;
     padding: 0;
