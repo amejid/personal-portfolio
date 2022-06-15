@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.btn-nav');
 const navMenu = document.querySelector('.nav-links');
 const closeBtn = document.querySelector('.close-btn');
 const navLink = document.querySelectorAll('.nav-link');
+const cardsContainer = document.querySelector('.cards-container');
 
 const projectsData = [
   {
@@ -60,6 +61,38 @@ const projectsData = [
   },
 ];
 
+document.addEventListener('DOMContentLoaded', () => {
+  for (let i = 0; i < projectsData.length; i += 1) {
+    const projectCard = document.createElement('div');
+    projectCard.classList.add('project-card');
+    const projectCardThumb = document.createElement('div');
+    projectCardThumb.classList.add('project-card--thumb');
+    projectCard.appendChild(projectCardThumb);
+    const projectCardContent = document.createElement('div');
+    projectCardContent.classList.add('project-card--content');
+    projectCard.appendChild(projectCardContent);
+    const projectTitle = document.createElement('h3');
+    projectTitle.classList.add('project-title');
+    projectTitle.textContent = projectsData[i].name;
+    projectCardContent.appendChild(projectTitle);
+    const projectTools = document.createElement('ul');
+    projectTools.classList.add('project-tools');
+    projectCardContent.appendChild(projectTools);
+
+    for (let j = 0; j < 4; j += 1) {
+      const projectTool = document.createElement('li');
+      projectTool.textContent = projectsData[i].technologies[j];
+      projectTools.appendChild(projectTool);
+    }
+
+    const projectButton = document.createElement('button');
+    projectButton.classList.add('btn', 'view-project');
+    projectButton.textContent = 'See Project';
+    projectCardContent.appendChild(projectButton);
+    cardsContainer.appendChild(projectCard);
+  }
+});
+
 hamburger.addEventListener('click', () => {
   navMenu.classList.add('mobile-menu');
   document.body.style.overflow = 'hidden';
@@ -75,3 +108,4 @@ navLink.forEach((link) =>
     navMenu.classList.remove('mobile-menu');
   })
 );
+
