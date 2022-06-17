@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalImgDesktop = document.createElement('img');
   const modalTitle = document.createElement('h3');
   for (let i = 0; i < projectDetails.length; i += 1) {
-    projectDetails[i].addEventListener('click', () => {
+    projectDetails.addEventListener('click', () => {
       modalTools.innerHTML = '';
       const [imgMobile, imgDesktop] = projectsData[i].imageUrl;
       modalImgMobile.src = imgMobile;
