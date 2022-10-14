@@ -6,58 +6,82 @@ const cardsContainer = document.querySelector('.cards-container');
 
 const projectsData = [
   {
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'Pollution Metrics USA',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: ['./images/snapshoot-mobile.png', './images/snapshoot-desktop.png'],
-    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    linkLive: 'https://amejid.github.io/personal-portfolio/',
-    linkSource: 'https://github.com/amejid/personal-portfolio',
+      'This web application is build with react and provides statistical insights on air pollution data for states and cites inside USA.',
+    imageUrl: [
+      './images/projects/pollution.webp',
+      './images/projects/pollution.webp',
+      './images/projects/pollution.webp',
+    ],
+    technologies: ['react', 'redux', 'scss', 'api'],
+    linkLive: 'https://pollution-metrics.netlify.app/',
+    linkSource: 'https://github.com/amejid/pollution-metrics',
   },
   {
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'Bookstore CMS',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: ['./images/snapshoot-mobile.png', './images/snapshoot-desktop.png'],
-    technologies: ['Ruby on rails', 'css', 'Javascript', 'html', 'Github'],
-    linkLive: '',
-    linkSource: '',
+      'The Bookstore is a website where the user can display a list of books, add a book by providing a title, an author, and selecting from the categories, and remove a selected book.',
+    imageUrl: [
+      './images/projects/bookstore.webp',
+      './images/projects/bookstore.webp',
+      './images/projects/bookstore.webp',
+    ],
+    technologies: ['react', 'redux', 'scss', 'api'],
+    linkLive: 'https://bookstore-amejid.netlify.app/',
+    linkSource: 'https://github.com/amejid/bookstore',
   },
   {
-    name: 'Multi-Post Stories Gain+Glory',
+    name: "Space Travelers' Hub",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: ['./images/snapshoot-mobile.png', './images/snapshoot-desktop.png'],
-    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    linkLive: '',
-    linkSource: '',
+      'This web application provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.',
+    imageUrl: [
+      './images/projects/space.webp',
+      './images/projects/space.webp',
+      './images/projects/space.webp',
+    ],
+    technologies: ['react', 'redux', 'scss', 'api'],
+    linkLive: 'https://space-amejid-stephen.netlify.app/',
+    linkSource: 'https://github.com/amejid/space-travelers-hub',
   },
   {
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'PokeMon Collection',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: ['./images/snapshoot-mobile.png', './images/snapshoot-desktop.png'],
-    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    linkLive: '',
-    linkSource: '',
+      'Pokémon Cards Collection project is the application for showing top 20 pokemon, Users can see details of a specific Pokémon by clicking see-details button Users can give Stars to one or more Cards.Users can comment on pokemon card details.',
+    imageUrl: [
+      './images/projects/poke.webp',
+      './images/projects/poke.webp',
+      './images/projects/poke.webp',
+    ],
+    technologies: ['javascript', 'css', 'html'],
+    linkLive: 'https://ishpaul777.github.io/pokemon-cards-collection/',
+    linkSource: 'https://github.com/ishpaul777/pokemon-cards-collection',
   },
   {
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'YTech Landing Page',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: ['./images/snapshoot-mobile.png', './images/snapshoot-desktop.png'],
-    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    linkLive: '',
-    linkSource: '',
+      'This a dynamic, two page, responsive website for a local tech startup named Y-Tech to showcase their services. The team section on the homepage is displayed dynamically from an array of objects using JavaScript.',
+    imageUrl: [
+      './images/projects/ytech.webp',
+      './images/projects/ytech.webp',
+      './images/projects/ytech.webp',
+    ],
+    technologies: ['javascript', 'css', 'html'],
+    linkLive: 'https://amejid.github.io/ytech-landing/',
+    linkSource: 'https://github.com/amejid/ytech-landing',
   },
   {
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'Math Magicians',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: ['./images/snapshoot-mobile.png', './images/snapshoot-desktop.png'],
-    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
-    linkLive: '',
-    linkSource: '',
+      'Math-Magicians is a web app for all lovers of mathematics. It is a Single Page Application (SPA) that allows users to make simple calculations and read a random math-related quote.',
+    imageUrl: [
+      './images/projects/math.webp',
+      './images/projects/math.webp',
+      './images/projects/math.webp',
+    ],
+    technologies: ['react', 'scss'],
+    linkLive: 'https://math-magicians-amejid.netlify.app/',
+    linkSource: 'https://github.com/amejid/math-magicians',
   },
 ];
 
@@ -66,7 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectCard = document.createElement('div');
     projectCard.classList.add('project-card');
     const projectCardThumb = document.createElement('div');
+    const projectCardThumbImg = document.createElement('img');
+    const [, , projectImg] = projectsData[i].imageUrl;
+    projectCardThumbImg.src = projectImg;
     projectCardThumb.classList.add('project-card--thumb');
+    projectCardThumb.appendChild(projectCardThumbImg);
     projectCard.appendChild(projectCardThumb);
     const projectCardContent = document.createElement('div');
     projectCardContent.classList.add('project-card--content');
@@ -79,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projectTools.classList.add('project-tools');
     projectCardContent.appendChild(projectTools);
 
-    for (let j = 0; j < 4; j += 1) {
+    for (let j = 0; j < projectsData[i].technologies.length; j += 1) {
       const projectTool = document.createElement('li');
       projectTool.textContent = projectsData[i].technologies[j];
       projectTools.appendChild(projectTool);

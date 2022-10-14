@@ -173,9 +173,12 @@ footer {
 }
 
 .project-card--thumb {
-  height: 25.2rem;
   background-color: #ebf0ee;
   margin-bottom: 1.6rem;
+}
+
+.project-card--thumb img {
+  width: 100%;
 }
 
 .project-card--content {
