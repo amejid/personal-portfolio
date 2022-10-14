@@ -173,9 +173,12 @@ footer {
 }
 
 .project-card--thumb {
-  height: 25.2rem;
   background-color: #ebf0ee;
   margin-bottom: 1.6rem;
+}
+
+.project-card--thumb img {
+  width: 100%;
 }
 
 .project-card--content {
@@ -346,8 +349,7 @@ footer {
 }
 
 .about-intro {
-  background-image:
-    url(../images/bg/illustration-1-about-me-mobile.png),
+  background-image: url(../images/bg/illustration-1-about-me-mobile.png),
     url(../images/bg/illustration-2-about-me-mobile.png);
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left;
@@ -738,8 +740,7 @@ footer {
   }
 
   .about-intro-container {
-    background-image:
-      url(../images/bg/illustration-about-me-1-desktop.png),
+    background-image: url(../images/bg/illustration-about-me-1-desktop.png),
       url(../images/bg/illustration-about-me-2-desktop.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom left;
@@ -769,8 +770,7 @@ footer {
 
   .contact-me {
     padding: 0;
-    background-image:
-      url(../images/bg/illustration-1-contact-form-desktop.png),
+    background-image: url(../images/bg/illustration-1-contact-form-desktop.png),
       url(../images/bg/illustration-2-contact-form-desktop.png),
       url(../images/bg/illustration-3-contact-form-desktop.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
